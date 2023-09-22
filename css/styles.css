@@ -1,6 +1,35 @@
-.header {
-        background: var(--WHITE, #FFF);
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1158px;
+    
+}
+.header {
+        background: var(--WHITE, #FFF); 
+}
+
+.header .container {
+    display: flex;
+        justify-content: space-between;
+        padding-left: 156px;
+        padding-top: 25.5px;
+        padding-bottom: 25.5px;
+}
+
 .name-company {
     color:#4D5AE5;
         font-family: 'Raleway', sans-serif;
@@ -10,7 +39,20 @@
         line-height: 1.17;
         letter-spacing: 0.54px;
         text-transform: uppercase;
-   
+        display: flex;
+        gap: 0;  
+}
+.header .section-nav {
+display: flex;
+gap: 40px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    
+    
 }
 .name-company-link {
     color: #2e2f42;
@@ -21,6 +63,8 @@
         line-height: 1.17;
         letter-spacing: 0.54px;
         text-transform: uppercase;
+    
+        
 }
 .link {
     color: #2e2f42;
@@ -30,9 +74,11 @@
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        
 }
 .section-nav .link {
     color: #2e2f42;
+    
 }
 
 .section-nav .link:hover, .section-nav .link:focus, .section-nav .link:active {
@@ -46,7 +92,8 @@ font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;  
+    
 } 
 
 .link-address {
@@ -57,6 +104,7 @@ font-family: Roboto;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
 }
 
 .address .link-address:hover, .address .link-address:focus, .address .link-address:active {
@@ -67,10 +115,14 @@ font-family: Roboto;
         font-family: 'Roboto', sans-serif;
         color: #434455;
         background-color: #FFFFFF;
+        
 }
 
 .section-one {
 background: var(--NAVY-BLUE, #2E2F42);
+padding: 188px 292px;
+
+
 }
 .title-name-one {    
 color: var(--WHITE, #FFF);
@@ -91,6 +143,16 @@ color: var(--WHITE, #FFF);
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize; 
+}
+.advanteges {
+display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 120px;
+    padding: 0;
+}
+.item {
+    width: calc((100% - 32px) / 5);
 }
 .section-subtitle {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -122,6 +184,7 @@ color: var(--WHITE, #FFF);
 
 .list-color {
     background-color: #FFFFFF;
+    width: calc((100% - 100px) / 4);
 }
 
 .title-name-four {
@@ -143,6 +206,14 @@ color: var(--WHITE, #FFF);
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.64px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        display: inline-flex;
+            padding: 16px 32px;
+        align-items: flex-start;
+            gap: 10px;
+        margin: 48px auto;
+            display: block;
 }
 
 .button-order:hover, .button-order:focus {
