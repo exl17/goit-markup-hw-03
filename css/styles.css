@@ -25,17 +25,17 @@ img {
     padding: 0 15px;
     
 }
+
 .header {
         background: var(--WHITE, #FFF);
         border-bottom: 1px solid #e7e9fc;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 24px 0;
 }
 
 .header .container {
     display: flex;
         justify-content: space-between;
-    padding: 24px 0;
 
 }
 
@@ -171,8 +171,16 @@ color: #FFF;
     
 }
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .advanteges {
@@ -264,7 +272,6 @@ gap: 24px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    gap: 24px;
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 8px;
 }
