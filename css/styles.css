@@ -21,6 +21,8 @@ img {
 
 .container {
     width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
     
 }
 .header {
@@ -29,14 +31,13 @@ img {
         margin: 0 auto;
         padding: 0 15px;
         
+        
 }
 
 .header .container {
     display: flex;
         justify-content: space-between;
-        padding-left: 156px;
-        padding-top: 25.5px;
-        padding-bottom: 25.5px;
+    padding: 24px 0;
         
 }
 
@@ -133,18 +134,21 @@ font-family: Roboto;
 
 .section-one {
 background: var(--NAVY-BLUE, #2E2F42);
-padding: 188px 292px;
+padding: 188px 0
 
 
 }
 .title-name-one {    
-color: var(--WHITE, #FFF);
+color: #FFF;
     text-align: center;
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    max-width: 496px;
+    margin: 0 auto;
+    
 }
 
 .title-name-two {
@@ -229,11 +233,15 @@ display: flex;
             gap: 10px;
         margin: 48px auto;
             display: block;
+            min-width: 169px;
+            height: 56px;
+            border: none;
+            cursor: pointer;
 }
 
 .button-order:hover, .button-order:focus {
         background: var(--OCEAN, #404BBF);
-    cursor: pointer;
+    
 }
 
 .footer {
