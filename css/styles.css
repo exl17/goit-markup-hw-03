@@ -22,20 +22,21 @@ img {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     
 }
 .header {
         background: var(--WHITE, #FFF);
         border-bottom: 1px solid #e7e9fc;
         margin: 0 auto;
-        padding: 24px 0 24px;        
+        padding: 0 15px;
 }
 
 .header .container {
     display: flex;
         justify-content: space-between;
     padding: 24px 0;
+
 }
 
 .name-company {
@@ -48,7 +49,8 @@ img {
         letter-spacing: 0.54px;
         text-transform: uppercase;
         display: flex;
-        gap: 0;  
+        gap: 0;
+        margin-right: 76px;
 }
 
 .header .section-nav {
@@ -87,6 +89,7 @@ align-items: center;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0;
         
 }
 .section-nav .link {
@@ -167,20 +170,20 @@ color: #FFF;
     
     
 }
-.hidden {
-    visibility: hidden;
-        
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 
 .advanteges {
 display: flex;
 gap: 24px;
+
 }
 
 .item {
-    margin-right: 24px;
-        width: calc((100% - 72px) / 4);
-        border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .section-subtitle {
@@ -223,12 +226,12 @@ gap: 24px;
 .list-color {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4); 
+    border-radius: 0px 0px 4px 4px;
     
 }
 .our-team {
     display: flex;
         gap: 24px;
-        border-radius: 0px 0px 4px 4px;
 }
 
 .member {
@@ -260,9 +263,10 @@ gap: 24px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-        gap: 24px;
-        border-radius: 0px 0px 4px 4px;
-        margin-bottom: 8px;
+    row-gap: 48px;
+    gap: 24px;
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 8px;
 }
 .button-order {
     background: var(--IRIS, #4D5AE5);
